@@ -14,9 +14,7 @@ class Config(object):
     SECRET_KEY = config('SECRET_KEY', default='S#perS3crEt_007')
 
     # This will create a file in <app> FOLDER
-    # SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'db.sqlite3')
-    SQLALCHEMY_DATABASE_URI = 'postgres://blgfetmmwwxhfk:338213974b008d32933b1d761c3e66d52d59b6173cc79db3ae8e73cdde3d34fa@ec2-34-198-243-120.compute-1.amazonaws.com:5432/deds7edkfp4hgu'
-
+    SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'db.sqlite3')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 class ProductionConfig(Config):
